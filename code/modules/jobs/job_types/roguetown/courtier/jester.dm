@@ -3,8 +3,8 @@
 	flag = JESTER
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 
 	allowed_races = RACES_ALL_KINDS
 
@@ -16,7 +16,6 @@
 	allowed_ages = ALL_AGES_LIST
 	spells = list(/obj/effect/proc_holder/spell/self/telljoke,/obj/effect/proc_holder/spell/self/telltragedy)
 	outfit = /datum/outfit/job/roguetown/jester
-	display_order = JDO_JESTER
 	give_bank_account = TRUE
 	min_pq = -5 //retard jesters are funny so low PQ requirement
 	max_pq = null

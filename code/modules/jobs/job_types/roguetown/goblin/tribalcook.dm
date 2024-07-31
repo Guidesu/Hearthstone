@@ -1,4 +1,4 @@
-/datum/job/roguetown/tribalcook
+/*/datum/job/roguetown/tribalcook
 	title = "Tribal Cook"
 	flag = TRIBALCOOK
 	department_flag = TRIBAL
@@ -7,7 +7,7 @@
 	spawn_positions = 3
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Cook, farm, butcher. Make king or queen happy with apple pies! Don't forget about your brothers and sisters."
+	tutorial = "Cook, farm, butcher. Make leader or queen happy with apple pies! Don't forget about your brothers and sisters."
 	cmode_music = 'sound/music/combat_gronn.ogg'
 
 	outfit = /datum/outfit/job/roguetown/tribalcook
@@ -33,3 +33,4 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 		H.change_stat("intelligence", 1)
 		H.change_stat("fortune", 1)
+*/

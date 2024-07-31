@@ -107,7 +107,7 @@
 
 /obj/item/clothing/head/roguetown/roguehood/astrata
 	name = "sun hood"
-	desc = "A hood worn by those who favor Astrata. Praise the firstborn sun!"
+	desc = "A hood worn by those who favor Heliora. Praise the firstborn sun!"
 	color = null
 	icon_state = "astratahood"
 	item_state = "astratahood"
@@ -122,7 +122,7 @@
 
 /obj/item/clothing/head/roguetown/roguehood/nochood
 	name = "moon hood"
-	desc = "A hood worn by those who favor Noc with a mask in the shape of a crescent."
+	desc = "A hood worn by those who favor Lunor with a mask in the shape of a crescent."
 	color = null
 	icon_state = "nochood"
 	item_state = "nochood"
@@ -388,7 +388,7 @@
 	color = CLOTHING_RED
 
 /obj/item/clothing/head/roguetown/crown/serpcrown
-	name = "crown of rockhill"
+	name = "crown of emberstead"
 	desc = ""
 	icon_state = "serpcrown"
 	//dropshrink = 0
@@ -402,7 +402,7 @@
 	SSroguemachine.crown = src
 
 /obj/item/clothing/head/roguetown/crown/serpcrown/proc/anti_stall()
-	src.visible_message(span_warning("The Crown of Rockhill crumbles to dust, the ashes spiriting away in the direction of the Keep."))
+	src.visible_message(span_warning("The Crown of Emberstead crumbles to dust, the ashes spiriting away in the direction of the Keep."))
 	SSroguemachine.crown = null //Do not harddel.
 	qdel(src) //Anti-stall
 
@@ -663,7 +663,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Heliora's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
@@ -703,7 +703,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/heavy/astratahelm
 	name = "astrata helmet"
-	desc = "Headwear commonly worn by Templars in service to Astrata. The firstborn child's light will forever shine on within its crest."
+	desc = "Headwear commonly worn by Templars in service to Heliora. The firstborn child's light will forever shine on within its crest."
 	icon_state = "astratahelm"
 	item_state = "astratahelm"
 	emote_environment = 3
@@ -713,7 +713,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/heavy/nochelm
 	name = "noc helmet"
-	desc = "Hearwear commonly worn by Templars in service to Noc. Without the night there can be no day, without Noc there can be no light in the dark hours."
+	desc = "Hearwear commonly worn by Templars in service to Lunor. Without the night there can be no day, without Lunor there can be no light in the dark hours."
 	icon_state = "nochelm"
 	item_state = "nochelm"
 	emote_environment = 3
@@ -803,7 +803,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Heliora's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",
@@ -993,7 +993,7 @@
 		"Madroot Red"="#AD4545",
 		"Marigold Orange"="#E2A844",
 		"Politely, Yuck"="#685542",
-		"Astrata's Yellow"="#FFFD8D",
+		"Heliora's Yellow"="#FFFD8D",
 		"Bog Green"="#375B48",
 		"Seafoam Green"="#49938B",
 		"Woad Blue"="#395480",

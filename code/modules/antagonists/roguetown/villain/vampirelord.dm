@@ -354,7 +354,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 					if(T.get_lumcount() > 0.15)
 						if(!disguised)
 							if(!isspawn)
-								to_chat(H, span_warning("Astrata spurns me! I must get out of her rays!")) // VLord is more punished for daylight excursions.
+								to_chat(H, span_warning("Heliora spurns me! I must get out of her rays!")) // VLord is more punished for daylight excursions.
 								var/turf/N = H.loc
 								if(N.can_see_sky())
 									if(N.get_lumcount() > 0.15)
@@ -895,7 +895,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 
 /datum/objective/vampirelord/ascend
 	name = "sun"
-	explanation_text = "Astrata has spurned me long enough. I must conquer the Sun."
+	explanation_text = "Heliora has spurned me long enough. I must conquer the Sun."
 	team_explanation_text = ""
 	triumph_count = 5
 
@@ -923,7 +923,7 @@ GLOBAL_LIST_EMPTY(vampire_objects)
 
 /datum/objective/vampirelord/infiltrate/two/check_completion()
 	var/datum/game_mode/chaosmode/C = SSticker.mode
-	var/list/noblejobs = list("King", "Queen Consort", "Royal Heir", "Hand", "Steward")
+	var/list/noblejobs = list("Leader", "Path Maiden Consort", "Royal Heir", "Hand", "Steward")
 	for(var/datum/mind/V in C.vampires)
 		if(V.current.job in noblejobs)
 			return TRUE

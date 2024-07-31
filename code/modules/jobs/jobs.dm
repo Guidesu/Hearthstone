@@ -60,46 +60,46 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	ROLE_PAI))
 
 GLOBAL_LIST_INIT(noble_positions, list(
-	"King",
-	"Consort Candidate",
+	"Leader",
+/*	"Consort Candidate",
 	"Royal Heir",
 	"Guard Captain",
 	"Bailiff",
 	"Councillor",
 	"Steward",
 	"Knight",
-	"Noble Guest",
+	"Noble Guest",*/
 ))
 
 GLOBAL_LIST_INIT(courtier_positions, list(
 	"Court Magician",
-	"Court Physician",
+/*	"Court Physician",
 	"Jester",
-	"Butler",
+	"Butler",*/
 ))
 
 GLOBAL_LIST_INIT(garrison_positions, list(
-	"Watchman",
+/*	"Watchman",
 	"Bog Guard",
 	"Bog Master",
 	"Royal Guard",
 	"Dungeoneer",
 	"Gatemaster",
-	"Town Sheriff",
+	"Town Sheriff",*/
 ))
 
 GLOBAL_LIST_INIT(church_positions, list(
-	"Priest",
+/*	"Priest",
 	"Inquisitor",
 	"Confessor",
 	"Acolyte",
 	"Mortician",
 	"Templar",
-	"Druid",
+	"Druid",*/
 ))
 
 GLOBAL_LIST_INIT(yeoman_positions, list(
-	"Merchant",
+/*	"Merchant",
 	"Innkeep",
 	"Archivist",
 	"Armorer",
@@ -108,11 +108,11 @@ GLOBAL_LIST_INIT(yeoman_positions, list(
 	"Alchemist",
 	"Mason",
 	"Scribe",
-	"Village Elder",
+	"Village Elder",*/
 ))
 
 GLOBAL_LIST_INIT(peasant_positions, list(
-	"Soilson",
+/*	"Soilson",
 	"Butcher",
 	"Cook",
 	"Lunatic",
@@ -128,25 +128,25 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 	"Prisoner",
 	"Beggar",
 	"Adventurer",
-	"Pilgrim",
+	"Pilgrim",*/
 ))
 
 GLOBAL_LIST_INIT(mercenary_positions, list(
-	"Mercenary",
+/*	"Mercenary",
 	"Grenzelhoft Mercenary",
 	"Desert Rider Mercenary",
-	"Veteran",
+	"Veteran",*/
 ))
 
 GLOBAL_LIST_INIT(apprentices_positions, list(
-	"Squire",
+/*	"Squire",
 	"Clerk",
 	"Smithy Apprentice",
 	"Magicians Apprentice",
 	"Churchling",
 	"Servant",
 	"Shophand",
-	"Vagabond",
+	"Vagabond",*/
 ))
 
 GLOBAL_LIST_INIT(allmig_positions, list(
@@ -160,13 +160,13 @@ GLOBAL_LIST_INIT(roguewar_positions, list(
 
 
 GLOBAL_LIST_INIT(goblin_positions, list(
-	"Tribal Cook",
+/*	"Tribal Cook",
 	"Tribal Guard",
 	"Chieftain",
 	"Tribal Smith",
 	"Tribal Shaman",
 	"Tribal Villager",
-	/*"Tribal Slave",*/
+	"Tribal Slave",*/
 ))
 
 

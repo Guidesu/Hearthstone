@@ -24,7 +24,7 @@
 "md" = (/obj/machinery/light/rogue/oven/south,/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/mountains/decap)
 "mJ" = (/obj/item/clothing/neck/roguetown/talkstone,/obj/item/clothing/neck/roguetown/talkstone,/obj/item/clothing/neck/roguetown/talkstone,/obj/item/clothing/neck/roguetown/talkstone,/obj/structure/lever/wall{dir = 4; redstone_id = "goblingemgate"},/obj/structure/closet/crate/chest,/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/mountains/decap)
 "nt" = (/obj/structure/bed/rogue/inn/pileofshit,/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/mountains/decap)
-"op" = (/obj/structure/closet/crate/drawer,/obj/item/roguekey/lord{name = "King Goblin key"; desc = "The King Goblin's key."; lockid = "kinggoblin"},/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/mountains/decap)
+"op" = (/obj/structure/closet/crate/drawer,/obj/item/roguekey/lord{name = "Leader Goblin key"; desc = "The Leader Goblin's key."; lockid = "kinggoblin"},/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/mountains/decap)
 "pY" = (/obj/structure/rack/rogue/shelf/big,/obj/item/storage/bag/tray,/obj/item/storage/bag/tray,/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/mountains/decap)
 "qH" = (/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/cobble,/area/rogue/indoors/shelter/mountains/decap)
 "qO" = (/obj/machinery/light/rogue/chand,/turf/open/transparent/openspace,/area/rogue/indoors/shelter/mountains/decap)

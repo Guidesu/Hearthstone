@@ -1,4 +1,4 @@
-/datum/job/roguetown/tribalshaman
+/*/datum/job/roguetown/tribalshaman
 	title = "Tribal Shaman"
 	flag = TRIBALSHAMAN
 	department_flag = TRIBAL
@@ -72,3 +72,4 @@
 	recruitment_message = "Serve the tribe, %RECRUIT!"
 	accept_message = "FOR THE TRIBE!"
 	refuse_message = "I refuse."
+*/

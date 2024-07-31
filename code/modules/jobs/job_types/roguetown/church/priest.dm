@@ -10,7 +10,6 @@
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = ALL_DIVINE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
-	tutorial = "The Divine is all that matters in a world of the immoral. The Weeping God left his children to rule over us mortals and you will preach their wisdom to any who still heed their will. The faithless are growing in number, it is up to you to shepard them to a Gods-fearing future."
 	whitelist_req = FALSE
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/templar, /obj/effect/proc_holder/spell/self/convertrole/monk)
@@ -18,7 +17,7 @@
 
 	display_order = JDO_PRIEST
 	give_bank_account = 115
-	min_pq = 2
+	min_pq = 0
 	max_pq = null
 
 /datum/outfit/job/roguetown/priest
@@ -82,37 +81,37 @@
 	for(var/mob/living/carbon/human/HU in get_step(src, src.dir))
 		if(!HU.mind)
 			continue
-		if(HU.mind.assigned_role == "King")
+		if(HU.mind.assigned_role == "Leader")
 			continue
 		if(!HU.head)
 			continue
 		if(!istype(HU.head, /obj/item/clothing/head/roguetown/crown/serpcrown))
 			continue
 
-		//Abdicate previous King
+		//Abdicate previous Leader
 		for(var/mob/living/carbon/human/HL in GLOB.human_list)
 			if(HL.mind)
-				if(HL.mind.assigned_role == "King" || HL.mind.assigned_role == "Queen Consort")
-					HL.mind.assigned_role = "Towner" //So they don't get the innate traits of the king
+				if(HL.mind.assigned_role == "Leader" || HL.mind.assigned_role == "Path Maiden Consort")
+					HL.mind.assigned_role = "Towner" //So they don't get the innate traits of the leader
 			//would be better to change their title directly, but that's not possible since the title comes from the job datum
-			if(HL.job == "King")
-				HL.job = "King Emeritus"
-			if(HL.job == "Queen Consort")
-				HL.job = "Queen Dowager"
+			if(HL.job == "Leader")
+				HL.job = "Leader Emeritus"
+			if(HL.job == "Path Maiden Consort")
+				HL.job = "Path Maiden Dowager"
 
-		//Coronate new King (or Queen)
-		HU.mind.assigned_role = "King"
-		HU.job = "King"
+		//Coronate new Leader (or Path Maiden)
+		HU.mind.assigned_role = "Leader"
+		HU.job = "Leader"
 		switch(HU.gender)
 			if("male")
-				SSticker.rulertype = "King"
+				SSticker.rulertype = "Leader"
 			if("female")
-				SSticker.rulertype = "Queen"
+				SSticker.rulertype = "Path Maiden"
 		SSticker.rulermob = HU
 		var/dispjob = mind.assigned_role
 		removeomen(OMEN_NOLORD)
-		say("By the authority of the gods, I pronounce you Ruler of all Rockhill!")
-		priority_announce("[real_name] the [dispjob] has named [HU.real_name] the inheritor of ROCKHILL!", title = "Long Live [HU.real_name]!", sound = 'sound/misc/bell.ogg')
+		say("By the authority of the gods, I pronounce you Ruler of all Emberstead!")
+		priority_announce("[real_name] the [dispjob] has named [HU.real_name] the inheritor of EMBERSTEAD!", title = "Long Live [HU.real_name]!", sound = 'sound/misc/bell.ogg')
 
 /mob/living/carbon/human/proc/churchexcommunicate()
 	set name = "Curse"

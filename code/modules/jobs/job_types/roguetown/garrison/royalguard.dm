@@ -1,15 +1,14 @@
 /datum/job/roguetown/royalguard
 	title = "Royal Guard"
 	flag = ROYALGUARD
-	department_flag = GARRISON
+	department_flag = SLOP
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 0
+	spawn_positions = 0
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	tutorial = "Having proven yourself loyal and capable, you have been knighted to serve the realm as the monarch's personal guard. You listen to your Lord and the Captain of the Guard, defending your Lord and realm."
-	display_order = JDO_ROYALGUARD
 	allowed_patrons = ALL_DIVINE_PATRONS
 	whitelist_req = TRUE
 

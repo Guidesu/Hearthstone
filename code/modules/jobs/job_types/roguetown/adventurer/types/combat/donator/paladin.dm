@@ -15,7 +15,7 @@
 /datum/outfit/job/roguetown/adventurer/paladin/pre_equip(mob/living/carbon/human/H)
 	..()
 	switch(H.patron.name)
-		if("Astrata")
+		if("Heliora")
 			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
 		if("Dendor")
 			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
@@ -23,7 +23,7 @@
 			neck = /obj/item/clothing/neck/roguetown/psicross/necra
 		if("Pestra")
 			neck = /obj/item/clothing/neck/roguetown/psicross/pestra
-		if("Noc")
+		if("Lunor")
 			neck = /obj/item/clothing/neck/roguetown/psicross/noc
 		if("Eora") //Eora content from Stonekeep
 			neck = /obj/item/clothing/neck/roguetown/psicross/eora
@@ -68,7 +68,7 @@
 			id = /obj/item/clothing/ring/silver
 			cloak = /obj/item/clothing/cloak/tabard/crusader
 			switch(H.patron.name)
-				if("Astrata")
+				if("Heliora")
 					cloak = /obj/item/clothing/cloak/tabard/crusader/astrata
 				if("Dendor")
 					cloak = /obj/item/clothing/cloak/tabard/crusader/dendor
@@ -76,7 +76,7 @@
 					cloak = /obj/item/clothing/cloak/tabard/crusader/necra
 				if("Pestra")
 					cloak = /obj/item/clothing/cloak/tabard/crusader/pestra
-				if("Noc")
+				if("Lunor")
 					cloak = /obj/item/clothing/cloak/tabard/crusader/noc
 			if(prob(70))
 				backr = /obj/item/rogueweapon/sword
@@ -116,7 +116,7 @@
 			id = /obj/item/clothing/ring/silver
 			cloak = /obj/item/clothing/cloak/tabard/crusader
 			switch(H.patron.name)
-				if("Astrata")
+				if("Heliora")
 					cloak = /obj/item/clothing/cloak/tabard/crusader/astrata
 				if("Dendor")
 					cloak = /obj/item/clothing/cloak/tabard/crusader/dendor
@@ -124,7 +124,7 @@
 					cloak = /obj/item/clothing/cloak/tabard/crusader/necra
 				if("Pestra")
 					cloak = /obj/item/clothing/cloak/tabard/crusader/pestra
-				if("Noc")
+				if("Lunor")
 					cloak = /obj/item/clothing/cloak/tabard/crusader/noc
 				if("Eora") //Eora content from Stonekeep
 					cloak = /obj/item/clothing/cloak/tabard/crusader/eora

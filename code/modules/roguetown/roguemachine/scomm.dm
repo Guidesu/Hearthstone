@@ -39,7 +39,7 @@
 	if(world.time > next_decree)
 		next_decree = world.time + rand(3 MINUTES, 8 MINUTES)
 		if(GLOB.lord_decrees.len)
-			say("The King Decrees: [pick(GLOB.lord_decrees)]", spans = list("info"))
+			say("The Leader Decrees: [pick(GLOB.lord_decrees)]", spans = list("info"))
 
 /obj/structure/roguemachine/scomm/attack_hand(mob/living/user)
 	. = ..()
@@ -58,7 +58,7 @@
 	user.changeNext_move(CLICK_CD_MELEE)
 	playsound(loc, 'sound/misc/beep.ogg', 100, FALSE, -1)
 	var/contents
-	if(SSticker.rulertype == "King")
+	if(SSticker.rulertype == "Leader")
 		contents += "<center>KING'S DECREES<BR>"
 	else
 		contents += "<center>QUEEN'S DECREES<BR>"

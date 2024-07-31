@@ -1,3 +1,4 @@
+/*
 /datum/job/roguetown/prisonerc
 	//disabled cuz no balls
 	title = "Tribal Slave"
@@ -39,3 +40,4 @@
 		H.change_stat("fortune", 2)
 		H.change_stat("strength", 1)
 		H.change_stat("constitution", -1)
+*/

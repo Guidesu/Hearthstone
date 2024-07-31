@@ -11,9 +11,9 @@
 	outfit = /datum/outfit/job/roguetown/templar
 	min_pq = 0
 	max_pq = null
-	total_positions = 3
-	spawn_positions = 3
-	display_order = JDO_TEMPLAR
+	total_positions = 0
+	spawn_positions = 0
+
 	give_bank_account = TRUE
 
 /datum/outfit/job/roguetown/templar
@@ -26,7 +26,7 @@
 	neck = /obj/item/clothing/neck/roguetown/psicross/astrata
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron.name)
-		if("Astrata")
+		if("Heliora")
 			wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/astratahelm
 			cloak = /obj/item/clothing/cloak/tabard/crusader/astrata
@@ -41,7 +41,7 @@
 		if("Pestra")
 			wrists = /obj/item/clothing/neck/roguetown/psicross/pestra
 			cloak = /obj/item/clothing/cloak/tabard/crusader/pestra
-		if("Noc")
+		if("Lunor")
 			wrists = /obj/item/clothing/neck/roguetown/psicross/noc
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/nochelm
 			cloak = /obj/item/clothing/cloak/tabard/crusader/noc

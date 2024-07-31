@@ -4,29 +4,29 @@
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 
 /datum/patron/divine/astrata
-	name = "Astrata"
+	name = "Heliora"
 	domain = "Goddess of the Sun, Day, and Order"
-	desc = "The Firstborn of Psydon, twin of Noc, gifted man the Sun as her divine gift."
+	desc = "The Firstborn of Psydon, twin of Lunor, gifted man the Sun as her divine gift."
 	worshippers = "The Noble Hearted, Zealots and Farmers"
 	t1 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
 	t2 = /obj/effect/proc_holder/spell/invoked/heal
 	t3 = /obj/effect/proc_holder/spell/invoked/revive
 	confess_lines = list(
-		"ASTRATA IS MY LIGHT!",
-		"ASTRATA BRINGS LAW!",
+		"HELIORA IS MY LIGHT!",
+		"HELIORA BRINGS LAW!",
 		"I SERVE THE GLORY OF THE SUN!",
 	)
 
 /datum/patron/divine/noc
-	name = "Noc"
+	name = "Lunor"
 	domain = "God of the Moon, Night, and Knowledge"
-	desc = "The Firstborn of Psydon, twin of Astrata, gifted man divine knowledge."
+	desc = "The Firstborn of Psydon, twin of Heliora, gifted man divine knowledge."
 	worshippers = "Wizards and Scholars"
 	t1 = /obj/effect/proc_holder/spell/invoked/blindness
 	t2 = /obj/effect/proc_holder/spell/invoked/invisibility
 	confess_lines = list(
-		"NOC IS NIGHT!",
-		"NOC SEES ALL!",
+		"LUNOR IS NIGHT!",
+		"LUNOR SEES ALL!",
 		"I SEEK THE MYSTERIES OF THE MOON!",
 	)
 
@@ -58,12 +58,12 @@
 	)
 
 /datum/patron/divine/ravox
-	name = "Ravox"
+	name = "Valmor"
 	domain = "God of War, Justice and Strength"
 	desc = "The strongest of Psydon's children, he watches man from afar."
 	worshippers = "Warriors, Sellswords & those who seek Justice"
 	confess_lines = list(
-		"RAVOX IS JUSTICE!",
+		"VALMOR IS JUSTICE!",
 		"THROUGH STRIFE, GRACE!",
 		"THE DRUMS OF WAR BEAT IN MY CHEST!",
 	)
@@ -89,11 +89,11 @@
 	desc = "The Mad-God, gifted man wanderlust and a thousand tricks."
 	worshippers = "Cheats, Frauds, Silver-Tongued devils and Roguish Types"
 	confess_lines = list(
-		"ASTRATA IS MY LIGHT!",
-		"NOC IS NIGHT!",
+		"HELIORA IS MY LIGHT!",
+		"LUNOR IS NIGHT!",
 		"DENDOR PROVIDES!",
 		"ABYSSOR COMMANDS THE WAVES!",
-		"RAVOX IS JUSTICE!",
+		"VALMOR IS JUSTICE!",
 		"ALL SOULS FIND THEIR WAY TO NECRA!",
 		"HAHAHAHA! AHAHAHA! HAHAHAHA!",
 		"PESTRA SOOTHES ALL ILLS!",

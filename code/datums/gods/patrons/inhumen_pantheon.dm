@@ -34,7 +34,7 @@
 /datum/patron/inhumen/matthios		// Removing 'class warfare' language in favor of 'uncivilized v civilized' language.
 	name = "Matthios"
 	domain = "God of Fire, Sacrifice and those who prey upon Civilization"
-	desc = "Man turned God, the 'Giver' Matthios stole fire from Astrata and gave it to primitive Man huddled in darkness and demands the riches flame creates in sacrifice."
+	desc = "Man turned God, the 'Giver' Matthios stole fire from Heliora and gave it to primitive Man huddled in darkness and demands the riches flame creates in sacrifice."
 	worshippers = "Free-Men, Outlaws and Frontiersmen"
 	mob_traits = list(TRAIT_COMMIE)
 	confess_lines = list(

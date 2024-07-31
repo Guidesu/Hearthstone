@@ -278,7 +278,7 @@
 
 
 /obj/item/book/rogue/tales3
-	name = "Myths & Legends of Rockhill & Beyond Volume I"
+	name = "Myths & Legends of Emberstead & Beyond Volume I"
 	desc = "Arbalius The Younger"
 	icon_state ="book3_0"
 	base_icon_state = "book3"

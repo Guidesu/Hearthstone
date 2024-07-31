@@ -2,38 +2,32 @@ GLOBAL_VAR(lordsurname)
 GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/job/roguetown/lord
-	title = "King"
-	f_title = "Queen"
+	title = "Pathfinder"
+	f_title = "Path Maiden"
 	flag = LORD
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 0
+	total_positions = 1
 	spawn_positions = 1
 	selection_color = JCOLOR_NOBLE
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_ALL_KINDS
+	allowed_patrons = ALL_DIVINE_PATRONS 
 	allowed_sexes = list(MALE, FEMALE)
+	spells = list(/obj/effect/proc_holder/spell/invoked/projectile/fireball/greater, /obj/effect/proc_holder/spell/invoked/projectile/fireball, /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt, /obj/effect/proc_holder/spell/invoked/projectile/fetch)
 
-	spells = list(
-		/obj/effect/proc_holder/spell/self/grant_title,
-		/obj/effect/proc_holder/spell/self/grant_nobility,
-		/obj/effect/proc_holder/spell/self/convertrole/servant,
-		/obj/effect/proc_holder/spell/self/convertrole/guard,
-		/obj/effect/proc_holder/spell/self/convertrole/bog,
-	)
 	outfit = /datum/outfit/job/roguetown/lord
 	visuals_only_outfit = /datum/outfit/job/roguetown/lord/visuals
 
 	display_order = JDO_LORD
-	tutorial = "Elevated upon your throne through a web of intrigue and political upheaval, you are the absolute authority of these lands and at the center of every plot within it. Every man, woman and child is envious of your position and would replace you in less than a heartbeat: Show them the error in their ways."
 	whitelist_req = FALSE
-	min_pq = 1
+	min_pq = 0
 	max_pq = null
 	give_bank_account = 1000
 	required = TRUE
 
 /datum/job/roguetown/exlord //just used to change the lords title
-	title = "King Emeritus"
-	f_title = "Queen Emeritus"
+	title = "Leader Emeritus"
+	f_title = "Path Maiden Emeritus"
 	flag = LORD
 	department_flag = NOBLEMEN
 	faction = "Station"
@@ -43,7 +37,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	give_bank_account = TRUE
 
 
-/datum/job/roguetown/lord/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/priest/lord/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()
 	if(L)
 		var/list/chopped_name = splittext(L.real_name, " ")
@@ -54,11 +48,14 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			GLOB.lordsurname = "of [L.real_name]"
 		SSticker.select_ruler()
 		if(L.gender != FEMALE)
-			to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is King of Rockhill.</span></span></b>")
+			to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is Leader of Emberstead.</span></span></b>")
 			addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_color_choice)), 50)
 		else
-			to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is Queen of Rockhill.</span></span></b>")
+			to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is Path Maiden of Emberstead.</span></span></b>")
 			addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_color_choice)), 50)
+
+/datum/outfit/job/roguetown/lord
+	allowed_patrons = ALL_CLERIC_PATRONS
 
 /datum/outfit/job/roguetown/lord/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -89,7 +86,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 			if(H.age == AGE_OLD)
 				H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-			H.change_stat("strength", 1)
+			H.change_stat("strength", 2)
 			H.change_stat("intelligence", 3)
 			H.change_stat("endurance", 3)
 			H.change_stat("speed", 1)
@@ -104,7 +101,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			if(istype(H.wear_mask, /obj/item/clothing/mask/rogue/eyepatch/left))
 				qdel(H.wear_mask)
 				mask = /obj/item/clothing/mask/rogue/lordmask/l
-	else //Queen, doesn't do anything at the moment as Lord is male-only
+	else //Path Maiden, doesn't do anything at the moment as Lord is male-only
 		armor = /obj/item/clothing/suit/roguetown/armor/armordress
 		belt = /obj/item/storage/belt/rogue/leather/plaquegold
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
@@ -124,6 +121,9 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			H.change_stat("speed", 2)
 			H.change_stat("perception", 2)
 			H.change_stat("fortune", 5)
+	var/datum/devotion/C = new /datum/devotion(H, H.patron) // This creates the cleric holder used for devotion spells
+	C.grant_spells_priest(H)
+	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)

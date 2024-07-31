@@ -3,8 +3,8 @@
 	flag = BUTLER
 	department_flag = COURTIERS
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 
 	f_title = "Maid"
 	allowed_races = RACES_ALL_KINDS
@@ -15,7 +15,7 @@
 			You alone have raised Kings, Queens, Princesses and Princes; without you, the royals would have all starved to death."
 
 	outfit = /datum/outfit/job/roguetown/butler
-	display_order = JDO_BUTLER
+
 	give_bank_account = 5
 	min_pq = -10
 	max_pq = null

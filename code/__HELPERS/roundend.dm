@@ -199,7 +199,7 @@
 
 	log_game("The round has ended.")
 
-	to_chat(world, "<BR><BR><BR><span class='reallybig'>So ends this tale of Hearthstone.</span>")
+	to_chat(world, "<BR><BR><BR><span class='reallybig'>So ends this tale of Moonshade.</span>")
 	get_end_reason()
 
 	var/list/key_list = list()
@@ -296,7 +296,7 @@
 	SSblackbox.Seal()
 
 	sleep(10 SECONDS)
-	SSvote.initiate_vote("map", "Hearthstone players")
+	SSvote.initiate_vote("map", "Moonshade players")
 	ready_for_reboot = TRUE
 	standard_reboot()
 
@@ -320,7 +320,7 @@
 		if(C.vampire_werewolf() == "vampire")
 			end_reason = "When the Vampires finished sucking the town dry, they moved on to the next one."
 		if(C.vampire_werewolf() == "werewolf")
-			end_reason = "The Werevolves formed an unholy clan, marauding Rockhill until the end of its daes."
+			end_reason = "The Werevolves formed an unholy clan, marauding Emberstead until the end of its daes."
 
 		if(C.headrebdecree)
 			end_reason = "The peasant rebels took control of the throne, hail the new community!"

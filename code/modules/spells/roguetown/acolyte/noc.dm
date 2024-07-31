@@ -1,4 +1,4 @@
-// Noc Spells
+// Lunor Spells
 /obj/effect/proc_holder/spell/invoked/blindness
     name = "Blindness"
     overlay_state = "blindness"
@@ -10,7 +10,7 @@
     warnie = "sydwarning"
     movement_interrupt = FALSE
     sound = 'sound/magic/churn.ogg'
-    invocation = "Noc blinds thee of thy sins!"
+    invocation = "Lunor blinds thee of thy sins!"
     invocation_type = "shout" //can be none, whisper, emote and shout
     associated_skill = /datum/skill/magic/holy
     antimagic_allowed = TRUE

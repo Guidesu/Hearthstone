@@ -308,7 +308,7 @@
 	i_type = "Armor"
 
 /datum/anvil_recipe/armor/astratahelm
-	name = "Astrata Helmet (+1 Steel)"
+	name = "Heliora Helmet (+1 Steel)"
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/ingot/steel)
 	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/astratahelm
@@ -324,7 +324,7 @@
 	i_type = "Armor"
 
 /datum/anvil_recipe/armor/nochelm
-	name = "Noc Helmet (+1 Steel)"
+	name = "Lunor Helmet (+1 Steel)"
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/ingot/steel)
 	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/nochelm

@@ -141,12 +141,12 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/neck/roguetown/psicross/astrata
-	name = "amulet of Astrata"
+	name = "amulet of Heliora"
 	desc = ""
 	icon_state = "astrata"
 
 /obj/item/clothing/neck/roguetown/psicross/noc
-	name = "amulet of Noc"
+	name = "amulet of Lunor"
 	desc = ""
 	icon_state = "noc"
 
@@ -161,7 +161,7 @@
 	icon_state = "necra"
 
 /obj/item/clothing/neck/roguetown/psicross/ravox
-	name = "amulet of Ravox"
+	name = "amulet of Valmor"
 	desc = ""
 	icon_state = "ravox"
 

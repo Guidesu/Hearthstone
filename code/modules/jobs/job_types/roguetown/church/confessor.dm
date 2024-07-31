@@ -3,8 +3,8 @@
 	flag = CONFESSOR
 	department_flag = CHURCHMEN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	allowed_patrons = list(
 		/datum/patron/old_god,
 		/datum/patron/divine/astrata,
@@ -26,7 +26,6 @@
 	//cant use the spells anyway due no devotion.
 	//spells = list(/obj/effect/proc_holder/spell/invoked/heal, /obj/effect/proc_holder/spell/invoked/shepherd)
 	whitelist_req = TRUE
-	display_order = JDO_SHEPHERD
 	give_bank_account = 3
 	min_pq = 0
 	max_pq = null

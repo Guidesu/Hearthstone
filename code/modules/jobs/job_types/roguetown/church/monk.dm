@@ -3,8 +3,8 @@
 	flag = MONK
 	department_flag = CHURCHMEN
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 0
+	spawn_positions = 0
 
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = ALL_ACOLYTE_PATRONS
@@ -12,7 +12,7 @@
 	outfit = /datum/outfit/job/roguetown/monk
 	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble cleric is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Priest in their daily tasks, maybe today will be the day something interesting happens."
 
-	display_order = JDO_MONK
+
 	give_bank_account = TRUE
 	min_pq = 0
 	max_pq = null

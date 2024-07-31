@@ -1,4 +1,4 @@
-/datum/job/roguetown/tribalguard
+/*/datum/job/roguetown/tribalguard
 	title = "Tribal Guard"
 	flag = TRIBALGUARD
 	department_flag = TRIBAL
@@ -45,3 +45,4 @@
 		H.change_stat("constitution", 1)
 		H.change_stat("endurance", 1)
 		H.change_stat("intelligence", -1)
+*/

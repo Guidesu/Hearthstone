@@ -3,12 +3,12 @@
 	flag = LADY
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "In an effort to unite your kingdom with the kingdom of Rockhill, you have visited as an emissary to the kingdom. As a potential candidate to become the Consort of Rockhill, you work alongside the King. Beneath your watch, are the warriors of your nation, and it is your duty to ensure they are held liable for their actions. They are not your personal guards."
+	tutorial = "In an effort to unite your kingdom with the kingdom of Emberstead, you have visited as an emissary to the kingdom. As a potential candidate to become the Consort of Emberstead, you work alongside the Leader. Beneath your watch, are the warriors of your nation, and it is your duty to ensure they are held liable for their actions. They are not your personal guards."
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/servant,
 	/obj/effect/proc_holder/spell/self/grant_nobility,
@@ -22,7 +22,7 @@
 	max_pq = null
 
 /datum/job/roguetown/exlady //just used to change the ladys title
-	title = "Queen Dowager"
+	title = "Path Maiden Dowager"
 	flag = LADY
 	department_flag = NOBLEMEN
 	faction = "Station"

@@ -1,16 +1,15 @@
 /datum/job/roguetown/guardsman
 	title = "Watchman"
 	flag = GUARDSMAN
-	department_flag = GARRISON
+	department_flag = SLOP
 	faction = "Station"
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 0
+	spawn_positions = 0
 	selection_color = JCOLOR_SOLDIER
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	tutorial = "Responsible for the safety of the town and the enforcement of the King's law, you are the vanguard of the city faced with punishing those who defy his Royal Majesty. Though you've many lords to obey, as both the Church and the Bailiff have great sway over your life."
-	display_order = JDO_TOWNGUARD
+	tutorial = "Responsible for the safety of the town and the enforcement of the Leader's law, you are the vanguard of the city faced with punishing those who defy his Royal Majesty. Though you've many lords to obey, as both the Church and the Bailiff have great sway over your life."
 	whitelist_req = TRUE
 
 	outfit = /datum/outfit/job/roguetown/guardsman

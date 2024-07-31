@@ -3,9 +3,8 @@
 	flag = LUNATIC
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 50 //shitcode solution until overflow roles are fixed
-	spawn_positions = 50
-
+	total_positions = 0
+	spawn_positions = 0
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)

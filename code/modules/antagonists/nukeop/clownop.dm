@@ -12,7 +12,7 @@
 	nukeop_outfit = /datum/outfit/syndicate/clownop/leader
 
 /datum/antagonist/nukeop/leader/clownop/give_alias()
-	title = pick("Head Honker", "Slipmaster", "Clown King", "Honkbearer")
+	title = pick("Head Honker", "Slipmaster", "Clown Leader", "Honkbearer")
 	if(nuke_team && nuke_team.syndicate_name)
 		owner.current.real_name = "[nuke_team.syndicate_name] [title]"
 	else

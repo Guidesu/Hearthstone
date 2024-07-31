@@ -1,5 +1,5 @@
 
-/datum/job/roguetown/chieftain
+/*/datum/job/roguetown/chieftain
 	title = "Chieftain"
 	f_title = "Chieftress"
 	flag = CHIEFTAIN
@@ -107,3 +107,4 @@
 		if("Tribal Villager")
 			villagerjob.total_positions += 1
 			priority_announce("A new Villager shall join our tribe", title = "The Tribe Accept New Kin", sound = 'sound/misc/dun.ogg')
+*/

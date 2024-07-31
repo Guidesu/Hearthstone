@@ -807,13 +807,13 @@
 
 /obj/structure/fluff/statue/astrata
 	name = "astrata statue"
-	desc = "A stone statue of the sun Goddess Astrata. Bless."
+	desc = "A stone statue of the sun Goddess Heliora. Bless."
 	icon_state = "astrata"
 	icon = 'icons/roguetown/misc/tallandwide.dmi'
 
 /obj/structure/fluff/statue/astrata/gold
 	name = "ornamental astrata statue"
-	desc = "An ornamental stone statue of the sun Goddess Astrata, decorated with golden jewelry. Bless."
+	desc = "An ornamental stone statue of the sun Goddess Heliora, decorated with golden jewelry. Bless."
 	icon_state = "astrata_bling"
 
 /obj/structure/fluff/statue/knight/r
@@ -932,7 +932,7 @@
 
 /obj/structure/fluff/statue/evil
 	name = "idol"
-	desc = "A statue built to the Giver, Matthios, who stole the gift of fire from Astrata. It is said that he grants the wishes of those pagan bandits (free folk) who feed him money and valuable metals."
+	desc = "A statue built to the Giver, Matthios, who stole the gift of fire from Heliora. It is said that he grants the wishes of those pagan bandits (free folk) who feed him money and valuable metals."
 	icon_state = "evilidol"
 	icon = 'icons/roguetown/misc/structure.dmi'
 

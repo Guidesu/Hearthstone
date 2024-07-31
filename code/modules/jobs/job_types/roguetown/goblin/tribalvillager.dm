@@ -1,3 +1,4 @@
+/*
 /datum/job/roguetown/tribalvillager
 	title = "Tribal Villager"
 	flag = TRIBALVILLAGER
@@ -42,3 +43,4 @@
 		H.change_stat("fortune", 2)
 		H.change_stat("strength", 1)
 		H.change_stat("constitution", -1)
+*/

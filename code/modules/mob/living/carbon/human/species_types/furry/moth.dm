@@ -5,7 +5,7 @@
 	name = "Fluvian"
 	id = "moth"
 	desc = "A race that hails from the far-away land of Deine-Coad, a grassy, forested land. We are an astute, proud people, albiet slightly weak of constitution. \
-	The creation myth of the Fluvian are that Eora, to emulate even a shred of her grace, plucked a palmful of moon-dust from Noc's mane and salted it upon Humens and other Creachers to create something which mimicked a fraction of her beauty. \
+	The creation myth of the Fluvian are that Eora, to emulate even a shred of her grace, plucked a palmful of moon-dust from Lunor's mane and salted it upon Humens and other Creachers to create something which mimicked a fraction of her beauty. \
 	We are delicate of constiution and strength, but intellegent, and agile. Due to our unique biology, the males and females of our race are equal in strength."
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
