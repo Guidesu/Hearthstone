@@ -26,7 +26,6 @@
 		if("Half Orc accent")
 			return strings("middlespeak.json", "middle")
 
-
 /datum/species/proc/handle_speech(datum/source, mob/speech_args)
 	var/message = speech_args[SPEECH_MESSAGE]
 
