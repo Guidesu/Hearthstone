@@ -90,7 +90,7 @@ INITIALIZE_IMMEDIATE(/mob/dead)
 					if(!(player.client.ckey in GLOB.hiderole))
 						if(player.client.prefs.real_name)
 							var/thing = "[player.client.prefs.real_name]"
-							if(istype(job, /datum/job/roguetown/hand))
+							if(istype(job, /datum/job/roguetown))
 								if(player != src)
 									if(client.prefs.job_preferences["Leader"] == JP_HIGH)
 										thing = "<a href='byond://?src=[REF(src)];sethand=[player.client.ckey]'>[player.client.prefs.real_name]</a>"
