@@ -3,8 +3,8 @@
 	flag = TRIBALSHAMAN
 	department_flag = TRIBAL
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	tutorial = "A tribal druidic shaman that works with shaman magic to heal the wounded and bring the dead back. They also take care of the farming on the side."

@@ -3,8 +3,8 @@
 	flag = COOK
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 
 	allowed_races = RACES_ALL_KINDS
 	tutorial = "Working closely with the barkeep who owns Skull Crack Inn, the cook should focus on cooking food for all the hungry mouths of Roguetown."

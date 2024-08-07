@@ -3,8 +3,8 @@
 	flag = TRIBALCOOK
 	department_flag = TRIBAL
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	tutorial = "Cook, farm, butcher. Make king or queen happy with apple pies! Don't forget about your brothers and sisters."

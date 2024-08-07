@@ -6,23 +6,21 @@
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = JCOLOR_CHURCH
-	f_title = "Priestess"
+	f_title = "Path Maid"
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = ALL_DIVINE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
-	tutorial = "The Divine is all that matters in a world of the immoral. The Weeping God left his children to rule over us mortals and you will preach their wisdom to any who still heed their will. The faithless are growing in number, it is up to you to shepard them to a Gods-fearing future."
 	whitelist_req = FALSE
 
-	spells = list(/obj/effect/proc_holder/spell/self/convertrole/templar, /obj/effect/proc_holder/spell/self/convertrole/monk)
 	outfit = /datum/outfit/job/roguetown/priest
 
 	display_order = JDO_PRIEST
 	give_bank_account = 115
-	min_pq = 2
+	min_pq = 0
 	max_pq = null
 
 /datum/outfit/job/roguetown/priest
-	allowed_patrons = list(/datum/patron/divine/astrata, /datum/patron/divine/eora)
+	allowed_patrons = ALL_DIVINE_PATRONS
 
 /datum/outfit/job/roguetown/priest/pre_equip(mob/living/carbon/human/H)
 	..()

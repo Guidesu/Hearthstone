@@ -3,8 +3,8 @@
 	flag = TRIBALSMITH
 	department_flag = TRIBAL
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	tutorial = "Tribal smith responsible for forging weapons, armor, and tools for the tribe."
